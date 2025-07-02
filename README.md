@@ -1,6 +1,8 @@
-# Python-Automation-Projects
+# Welcome To My Python Projects!
 
-This repository contains Python automation scripts designed to simplify repetitive tasks and boost productivity. 
+This repository contains Python scripts and applications, ranging from automation to data analysis/visualization. It also includes fun GUIs and games.
+
+
 
 ## Features
 - Web scraping and data extraction
