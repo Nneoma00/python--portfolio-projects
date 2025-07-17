@@ -17,5 +17,4 @@ This project only generates and cleans 200 customers' data.
 * Cleans and transforms the data to fit the desired structure
 * Saves the cleaned output
 
-## How to Run
-#[![Run on Replit](https://replit.com/badge/github/Nneoma00/your-repo)](https://replit.com/github/yourusername/your-repo)#
+### Pictorial comparison of old vs cleaned JSON:
