@@ -18,3 +18,4 @@ This project only generates and cleans 200 customers' data.
 * Saves the cleaned output
 
 ### Pictorial comparison of old vs cleaned JSON:
+![Output](https://github.com/Nneoma00/python--portfolio-projects/blob/main/json-data-cleaning/demo.png)
