@@ -10,6 +10,7 @@ sheets/.ipynb_checkpoints/
 
 # Ignore Streamlit secrets
 .streamlit/secrets.toml
+openai_test.py
 
 #Ignore .env
 .env
