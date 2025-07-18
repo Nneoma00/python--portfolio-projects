@@ -1,0 +1,18 @@
+# Ignore virtual environment
+sheets/
+!sheets/email_automation_app.py
+!sheets/*.py
+sheets/token.json
+sheets/*.json
+sheets/.env
+sheets/__pycache__/
+sheets/.ipynb_checkpoints/
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+
+#Ignore .env
+.env
+gsheet-credentials.json
+gmail-credentials.json
+token.json
