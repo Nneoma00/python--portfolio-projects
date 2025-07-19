@@ -12,7 +12,7 @@ from google.oauth2.credentials import Credentials
 import base64  #for gmail api
 from email.mime.text import MIMEText
 from email.utils import formataddr
-import streamlit as st #because of the tagged out creds and stsecrets
+#import streamlit as st #because of the tagged out creds and stsecrets
 
 
 import pandas
@@ -53,7 +53,7 @@ scopes = [
 ]
 #creds = SheetsCredentials.from_service_account_file("gsheet-credentials.json", scopes=scopes)
 
-creds = SheetsCredentials.from_service_account_info(st.secrets["gsheet_credentials"], scopes=scopes)
+creds = SheetsCredentials.from_service_account_file("gsheet-credentials.json", scopes=scopes)
 
 client = gspread.authorize(creds)
 
