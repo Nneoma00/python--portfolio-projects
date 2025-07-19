@@ -15,6 +15,7 @@ It integrates the **OpenAI API** for AI-generated content, **Gmail API** for sen
 * Marks each lead as "Sent" in the sheet to prevent duplicates
 * Includes a Streamlit interface to test email generation manually
 
+
 ## Try it now:
 [Try this tool on Streamlit](https://lead-email-automation.streamlit.app/)
 
