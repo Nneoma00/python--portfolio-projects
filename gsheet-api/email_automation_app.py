@@ -4,7 +4,7 @@ from google.oauth2.service_account import Credentials as SheetsCredentials
 from google.oauth2.credentials import Credentials as GmailCredentials
 #from dotenv import load_dotenv
 from openai import OpenAI
-from main import gmail_authenticate, send_mail, craft_email  # import from your existing file
+from utils import gmail_authenticate, send_mail, craft_email  # import from your existing file
 
 # Load env variables (e.g., OpenAI key)
 #load_dotenv()
@@ -58,7 +58,7 @@ if submitted:
         st.session_state.attempts += 1  # increment usage
         try:
             # 1. Append to Google Sheet
-            sheet.append_row([name, email, role, company, pain_point, "TRUE"])
+            #sheet.append_row([name, email, role, company, pain_point, "TRUE"])
 
             # 2. Generate and send the email
             subject, body = craft_email(name, role, pain_point)
