@@ -25,21 +25,19 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
 
 def gmail_authenticate():
-    secrets = st.secrets["gmail_token"]
+    creds_info = st.secrets["gmail_token"]
 
-    token_info = {
-        "token": secrets["token"],
-        "refresh_token": secrets["refresh_token"],
-        "token_uri": secrets["token_uri"],
-        "client_id": secrets["client_id"],
-        "client_secret": secrets["client_secret"],
-        "scopes": [secrets["scopes"]],
-    }
+    creds = Credentials(
+        token=creds_info["token"],
+        refresh_token=creds_info["refresh_token"],
+        token_uri=creds_info["token_uri"],
+        client_id=creds_info["client_id"],
+        client_secret=creds_info["client_secret"],
+        scopes=creds_info["scopes"]
+    )
 
-    creds = Credentials.from_authorized_user_info(info=token_info)
     service = build("gmail", "v1", credentials=creds)
-    return creds
-
+    return service
 
 #Google Sheets API Scopes
 scopes = [
