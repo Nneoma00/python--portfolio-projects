@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#00796B"            # Deep teal for buttons and highlights
+backgroundColor = "#7B8FA1"         # Steel Blue Light — deeper blue-gray background
+secondaryBackgroundColor = "#FFFFFF" # White for cards and panels
+textColor = "#263238"               # Dark slate gray for text
+font = "sans serif"                 # Clean, modern font

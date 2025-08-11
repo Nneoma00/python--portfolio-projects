@@ -1,0 +1,9 @@
+pdf/
+*.pyc
+__pycache__/
+*.log
+.env
+meetingz.pdf
+samples.py
+start.py
+
