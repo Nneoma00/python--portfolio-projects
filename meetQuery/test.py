@@ -1,5 +1,6 @@
 from langchain_community.document_loaders import PyPDFLoader
 import os
+import streamlit as st
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_core.messages import SystemMessage, HumanMessage
@@ -9,10 +10,10 @@ from pinecone import Pinecone
 from dotenv import load_dotenv
 load_dotenv()
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-ASTRA = os.getenv("ASTRA")
+GOOGLE_API_KEY = st.secrets("GOOGLE_API_KEY")
+
 ENDPOINT =os.getenv("ENDPOINT")
-PINECONE_KEY =os.getenv("PINECONE_KEY")
+PINECONE_KEY = st.secrets("PINECONE_KEY")
 
 #SELECT CHAT MODEL
 from langchain.chat_models import init_chat_model
@@ -91,3 +92,4 @@ if __name__ == "__main__":
     gen_summary(docs)
     query = input("Ask a question about the meeting: ")
     print(get_response(query))
+
