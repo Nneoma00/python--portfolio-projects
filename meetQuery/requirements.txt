@@ -57,7 +57,6 @@ jsonpointer==3.0.0
 jsonschema==4.25.0
 jsonschema-specifications==2025.4.1
 langchain==0.3.27
-langchain-astradb==0.6.0
 langchain-community==0.3.27
 langchain-core==0.3.72
 langchain-google-genai==2.1.8
@@ -74,7 +73,7 @@ multidict==6.6.3
 multiprocess==0.70.16
 mypy_extensions==1.1.0
 narwhals==2.0.1
-numpy==2.1.0
+numpy>=2.1.0
 openai==1.99.1
 orjson==3.11.1
 packaging==24.2
@@ -152,4 +151,5 @@ wrapt==1.17.2
 xxhash==3.5.0
 yarl==1.20.1
 zstandard==0.23.0
+
 
