@@ -10,10 +10,8 @@ from pinecone import Pinecone
 from dotenv import load_dotenv
 load_dotenv()
 
-GOOGLE_API_KEY = st.secrets("GOOGLE_API_KEY")
-
-ENDPOINT =os.getenv("ENDPOINT")
-PINECONE_KEY = st.secrets("PINECONE_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+PINECONE_KEY = st.secrets["PINECONE_KEY"]
 
 #SELECT CHAT MODEL
 from langchain.chat_models import init_chat_model
@@ -92,4 +90,5 @@ if __name__ == "__main__":
     gen_summary(docs)
     query = input("Ask a question about the meeting: ")
     print(get_response(query))
+
 
