@@ -10,7 +10,11 @@ Built with [LangChain](https://www.langchain.com/) + [Gemini](https://ai.google/
 
 
 ## 🎥 Demo
-https://github.com/your-username/MeetQuery/blob/main/demo/demo.mp4  
+[Watch a Quick Demo](https://www.youtube.com/watch?v=H2H9VQeocCshttps://youtu.be/H2H9VQeocCs)
+
+
+[![Watch the demo](https://img.youtube.com/vi/H2H9VQeocCs/0.jpg)](https://www.youtube.com/watch?v=H2H9VQeocCs)
+
 
 ## Features
 - Upload transcripts in **PDF, TXT, or VTT** format  
