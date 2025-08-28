@@ -4,7 +4,7 @@
 MeetQuery is a **RAG app** that ingests meeting transcripts (PDF, TXT, VTT), generates summaries, and lets users chat with the content interactively.  
 
 Built with [LangChain](https://www.langchain.com/) + [Gemini](https://ai.google/), [Pinecone](https://www.pinecone.io/), and [Streamlit](https://streamlit.io/).  
-
+![MeetQuery UI](https://raw.githubusercontent.com/Nneoma00/python--portfolio-projects/main/demos/pc%20meetquery%20ui.JPG)
 
 ## 🎥 Demo
 https://github.com/your-username/MeetQuery/blob/main/demo/demo.mp4  
