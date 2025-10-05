@@ -25,6 +25,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from google import genai
 from google.genai import types
@@ -52,7 +53,7 @@ app.add_middleware(
 )
 
 app.state.limiter = limiter
-app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+#app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 api_key = os.getenv("GEMINI_API_KEY")
 
@@ -68,6 +69,13 @@ class ChatResponse(BaseModel):
     products: List[Dict] = [] #returns empty list if no products are found matching prompt
 
 
+@app.exception_handler(RateLimitExceeded)
+def rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return JSONResponse(
+        status_code=429,
+        content={"message": "This API relies on a free AI model. Only 2 requests per minute allowed globally."}
+    )
+
 #root endpoint doesn't really do anything. just gives us a health check
 @app.get("/")
 async def root():
@@ -77,7 +85,7 @@ async def root():
 #if main.py file is in src sub-folder.. uvicorn src.main:app --reload
 
 @app.post("/chat", response_model=ChatResponse)
-@limiter.limit("2/minute")
+@limiter.limit("2/minute", key_func=lambda request: "global")
 #response_model param tells FastAP to return a response that matches the ChatResponse structure
 #we'll run the function below when a request comes in
 async def chat(request: Request, chat_request: ChatRequest):
