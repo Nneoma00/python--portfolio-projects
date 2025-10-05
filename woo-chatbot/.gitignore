@@ -1,0 +1,8 @@
+woo/
+.env
+__pycache__/
+*.pyc
+Lib/
+
+.pytest_cache/
+.idea/
