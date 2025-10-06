@@ -1,19 +1,27 @@
 # Welcome To My Python Projects!
 
-This repository contains Python scripts and applications, ranging from automation to data analysis/visualization. It also includes fun GUIs and games.
+This repository contains Python scripts and applications, for backend services and AI-powered systems.
+My projects touch on:
+- API Development & Backend Services (FastAPI, Django)
+- Data mining & data analysis (pandas, numpy, JSON)
+- AI integration (Gemini, OpenAI API, HuggingFace, LiteLLM, LangChain)
+- UI for demos: Streamlit, CodePen, (basic) HTML, CSS, JS
 
+## Projects:
 
+### 1. [**FastAPI e-Commrerce Chatbot**:](https://github.com/Nneoma00/python--portfolio-projects/tree/main/woo-chatbot)
+Inspired by a recent client project, I built this fun FastAPI application, featuring an AI "chat" endpoint. Suitable for e-commerce sites—particularly WooCommerce/WordPress.
+**Stack Overview:** Python, FastAPI, Gemini, SlowAPI, Pytest, HTTPX, JSON, Pydantic 
 
-## Features
-- Web scraping and data extraction
-- Email automation
-- PDF generation
+𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀: 
+1️⃣ Defined `ChatRequest` and `ChatResponse` Pydantic models to handle structured request/response schemas — enabling automatic validation and JSON serialization for the chatbot API.
+Implemented rate limiting and proper 429 error handling — with slowapi.
+2️⃣ Designed the AI system instruction to return structured JSON output, making it easier for the frontend to parse, display, or loop over responses.
+3️⃣ Wrote a pytest suite to validate API behavior.
+4️⃣ Deployed the API on Render, with auto-redeployment connected to GitHub pushes so every code update reflects instantly.
 
-## Projects
-1. **Command Line Invoice Generator**
-Uses a
-
-
-3. **Tech News Bot/Emailer**
-4. **PDF Invoice Generator**
-5. **Web Scraper: Dynamic Sites**
+### 2. **meetQuery: RAG app for uploading meeting transcripts (pdf, vtt, txt) and getting contextual info**
+Brief intro
+**Stack Overview:** Python, LangChain, Gemini, Streamlit
+  
+4. 
