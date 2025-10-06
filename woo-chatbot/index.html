@@ -102,7 +102,15 @@
 
         responseBox.innerHTML = ""; // clear loading
 
-      
+        //  Check for rate-limit
+        if (res.status === 429 && data.message) {
+          const rateDiv = document.createElement("div");
+          rateDiv.className = "message answer";
+          rateDiv.style.color = "red"; // optional: make it stand out
+          rateDiv.textContent = data.message;
+          responseBox.appendChild(rateDiv);
+          return; // stop here
+        }
 
 
         // Always display the assistant's answer
