@@ -14,10 +14,14 @@ Inspired by a recent client project, I built this fun FastAPI application, featu
 **Stack Overview:** Python, FastAPI, Gemini, SlowAPI, Pytest, HTTPX, JSON, Pydantic 
 
 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀: 
+
 1️⃣ Defined `ChatRequest` and `ChatResponse` Pydantic models to handle structured request/response schemas — enabling automatic validation and JSON serialization for the chatbot API.
 Implemented rate limiting and proper 429 error handling — with slowapi.
+
 2️⃣ Designed the AI system instruction to return structured JSON output, making it easier for the frontend to parse, display, or loop over responses.
+
 3️⃣ Wrote a pytest suite to validate API behavior.
+
 4️⃣ Deployed the API on Render, with auto-redeployment connected to GitHub pushes so every code update reflects instantly.
 
 ### 2. **meetQuery: RAG app for uploading meeting transcripts (pdf, vtt, txt) and getting contextual info**
