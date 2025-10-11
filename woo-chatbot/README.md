@@ -1,9 +1,12 @@
 # **eCommerce REST API**
 
 This project is an AI-powered Sales Chatbot for an eCommerce marketplace. 
+
 The backend service (**FastAPI**) interfaces with an AI model (**Gemini**), to deliver real-time product recommendations tailored to user search prompts.
+
 Fully compatible with WooCommerce/WordPress workflows, with an embeddable script for the frontend. 
 The _chat_ endpoint handles queries about products, and redirects users to alternative channels if an answer isn’t available.
+
 This application also includes a custom rate limit handler **(2 requests per minute)**, to handle high traffic gracefully.
 
 ## Tech Stack
