@@ -24,8 +24,17 @@ Implemented rate limiting and proper 429 error handling — with slowapi.
 
 4️⃣ Deployed the API on Render, with auto-redeployment connected to GitHub pushes so every code update reflects instantly.
 
-### 2. **meetQuery: RAG app for uploading meeting transcripts (pdf, vtt, txt) and getting contextual info**
-Brief intro
-**Stack Overview:** Python, LangChain, Gemini, Streamlit
+### 2. [**meetQuery: RAG app for uploading meeting transcripts**](https://github.com/Nneoma00/python--portfolio-projects/tree/b0d7593daff370a84618b25300fa17a4be978ea6/meetQuery)
+
+MeetQuery is a RAG app that ingests meeting transcripts (PDF, TXT, VTT), generates instant summaries, and lets users chat with the content interactively.
+
+Built with LangChain + Gemini, Pinecone, and Streamlit. Try it here: [meetquery.streamlit.app](https://meetquery.streamlit.app/)
+
+### 3. [**Inventory Microservice API : FastAPI + Redis**](https://github.com/Nneoma00/python--portfolio-projects/tree/b0d7593daff370a84618b25300fa17a4be978ea6/inventory-microservice)
+This project is a CRUD-based inventory microservice API built using FastAPI. It allows users to create, read, update, and delete inventory items efficiently. 
+The service connects to a Redis Cloud database using redis-om, enabling fast and scalable data storage.
+
+**Tech Stack** : Python, FastAPI, Redis-OM, Uvicorn
+
   
 4. 
